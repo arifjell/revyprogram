@@ -93,7 +93,7 @@ p {
 .bildeListe {
 	display: flex;
   flex-wrap: wrap;
-  padding: 0 4px;
+  padding: 0 2vw;
   text-align: center;
 }
 
@@ -124,21 +124,42 @@ p {
     flex: 100%;
     max-width: 100%;
   }
-	.skuespillerBilde img {
+.skuespillerBilde img {
 		margin-top: 8px;
 		vertical-align: middle;
 		width: 70%;
 	}
 }
 
+.stortbilde {
+	flex: 94%;
+  	max-width: 94%;
+  	padding: 0 3%;
+}
+
+.stortbilde img {
+	margin: 16px 0;
+	vertical-align: middle;
+	width: 100%;
+}
+
 .gruppeBilde {
 	flex: 48%;
 	max-width: 48%;
 	padding: 1%;
+	display: flex;flex-wrap: wrap;
 }
 
+.takketekst {
+	padding-left: 25%;
+}
+@media screen and (max-width:1200px) {
+	.takketekst {
+	padding: 0;
+}
+}
 .gruppeBilde img {
-  margin-top: 8px;
+  margin-top: 2vw;
   vertical-align: middle;
   width: 100%;
 }
@@ -147,6 +168,10 @@ p {
     flex: 100%;
     max-width: 100%;
   }
+}
+
+.gruppeBilde p {
+	text-align: left;
 }
 
 .sponsor {
@@ -162,6 +187,29 @@ p {
   padding-top: 5vw;
   padding-bottom: 5vw;
 }
+.sponsor2 {
+	flex: 100%;
+	max-width: 100%;
+}
+
+.sponsor2 img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 25%;
+  padding-top: 5vw;
+  padding-bottom: 5vw;
+}
+
+.takklogo {
+	flex: 100%;
+	max-width: 20%;
+	padding: 5%;
+}
+.takklogo img{
+  vertical-align: middle;
+  width: 100%;
+}
+
 @media screen and (max-width: 800px) {
   .sponsor {
     flex: 100%;
